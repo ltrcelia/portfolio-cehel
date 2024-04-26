@@ -1,0 +1,76 @@
+#a-propos {
+  .a-propos-container {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    align-items: center;
+    img {
+      margin-right: 100px;
+    }
+    .texte-apropos {
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+  .encart-pourquoi {
+    background-color: $powder-pink;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 40px 200px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .formations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-top: 60px;
+    .formations-container {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 18px;
+      .boules {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: $red-cherry;
+        margin: 0 10px;
+      }
+      .noms-ecoles {
+        color: $dark-blue;
+        font-family: $SemiBold;
+      }
+    }
+  }
+  .passions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 100px 0 100px;
+    .passions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      .icones {
+        font-size: 70px;
+      }
+    }
+  }
+  .border {
+    margin-bottom: 100px;
+  }
+}

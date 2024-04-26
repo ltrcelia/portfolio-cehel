@@ -1,0 +1,41 @@
+.ecran-accueil {
+  position: relative;
+  z-index: 1000;
+  background-color: $red-cherry;
+  width: 100vw;
+  height: 100vh;
+  .logo {
+    position: relative;
+    transform-origin: center;
+    top: 40%;
+    left: 40%;
+    width: 350px;
+  }
+  .scrollez-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 78%;
+    left: 50%;
+    img {
+      width: 80%;
+      animation: saute 1s infinite ease-in-out;
+    }
+    p {
+      margin-top: 10px;
+      color: white;
+    }
+  }
+}
+@keyframes saute {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

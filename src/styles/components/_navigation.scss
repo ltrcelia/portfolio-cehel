@@ -1,0 +1,41 @@
+.navigation {
+  margin: 20px 150px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  img {
+    width: 97px;
+    height: 35px;
+  }
+  ul {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    .nav-active {
+      font-family: $SemiBold;
+    }
+    a {
+      text-align: center;
+      text-decoration: none;
+      padding-left: 45px;
+      color: $red-cherry;
+      &:hover {
+        font-family: $SemiBold;
+      }
+      li {
+        cursor: pointer;
+      }
+      .contact-box {
+        color: white;
+        background-color: $red-cherry;
+        padding: 10px 22px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+}

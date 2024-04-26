@@ -1,0 +1,122 @@
+#competences {
+  .title {
+    margin-bottom: 100px;
+  }
+  .competences {
+    display: flex;
+    justify-content: space-between;
+
+    .design-graphique,
+    .motion-design,
+    .web-design {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 30px;
+      }
+      h3 {
+        color: $red-cherry;
+      }
+      .more {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+        }
+        p {
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+  .hidden {
+    margin: 74px 50px;
+    display: flex;
+    .texte-container {
+      margin-left: 100px;
+      h2 {
+        margin-bottom: 20px;
+      }
+      .title {
+        margin-bottom: 50px;
+      }
+      .flex {
+        display: flex;
+        margin-bottom: 20px;
+        p {
+          margin-right: 30px;
+          width: 150px;
+        }
+        .progress-bar {
+          width: 400px;
+          background-color: rgb(244, 237, 237);
+          height: 20px;
+          border-radius: 5px;
+          .progress {
+            height: 100%;
+            background-color: $red-cherry;
+            border-radius: 5px;
+            transition: width 0.3s ease-in-out;
+          }
+          .ph {
+            width: 85%;
+          }
+          .ill {
+            width: 90%;
+          }
+          .id {
+            width: 80%;
+          }
+          .ae {
+            width: 70%;
+          }
+          .pp {
+            width: 50%;
+          }
+          .xd {
+            width: 75%;
+          }
+          .fig {
+            width: 80%;
+          }
+          .hc {
+            width: 90%;
+          }
+          .js {
+            width: 70%;
+          }
+          .re {
+            width: 60%;
+          }
+          .php {
+            width: 50%;
+          }
+          .wp {
+            width: 85%;
+          }
+        }
+      }
+      .bouton {
+        display: flex;
+        justify-content: center;
+        .btn-pink {
+          margin-top: 40px;
+          font-size: 16px;
+          padding: 15px 25px;
+          font-family: $Regular;
+        }
+      }
+    }
+  }
+
+  .border {
+    margin-top: 25px;
+    width: 100%;
+    border-bottom: 2px solid $red-cherry;
+    display: block;
+  }
+}

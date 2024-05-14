@@ -10,7 +10,7 @@ const APropos = () => {
       </div>
       <h2>à propos.</h2>
       <div className="a-propos-container">
-        <img src={photoProfil} alt="" style={{ width: "360px" }} />
+        <img src={photoProfil} alt="" />
         <div className="texte-apropos">
           <h2>Hello, je suis Célia.</h2>
           <p>
@@ -34,7 +34,6 @@ const APropos = () => {
       </div>
 
       <h2>formations.</h2>
-      <div className="formations-container"></div>
       <div className="formations">
         <div className="formations-container">
           <p>2023-2024</p>

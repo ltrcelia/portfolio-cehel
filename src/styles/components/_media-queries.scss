@@ -1,0 +1,307 @@
+@media screen and (max-width: 1350px) {
+  #realisations {
+    .realisations {
+      .realisation {
+        .bloc {
+          width: 450px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  #realisations {
+    .realisations {
+      .bloc {
+        width: 500px;
+        height: 350px;
+      }
+    }
+  }
+  #competences {
+    .hidden-container {
+      .hidden {
+        margin: 74px 0;
+        .texte-container {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .ecran-accueil {
+    .stars-entree {
+      display: none;
+    }
+  }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    .navigation {
+      ul {
+        display: none;
+      }
+    }
+    #btn {
+      display: block;
+      position: relative;
+      cursor: pointer;
+    }
+    #btn span {
+      width: 40px;
+      background: $red-cherry;
+      height: 4px;
+      border-radius: 5px;
+      display: block;
+      margin-block: 5px;
+      transition: 0.3s ease;
+    }
+  }
+
+  .hero-header {
+    flex-direction: column;
+    .text-header {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 70px;
+
+      .btn-home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+  #realisations {
+    .categories {
+      margin-top: 50px;
+    }
+    .realisations {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .realisation {
+        .bloc {
+          width: 450px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  #competences {
+    .competences {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      .bloc {
+        width: 400px;
+        height: 250px;
+      }
+    }
+    .hidden-container {
+      .hidden {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        img {
+          width: 290px;
+          height: 290px;
+        }
+        .texte-container {
+          margin-left: 0;
+          margin-top: 30px;
+          .flex {
+            flex-direction: column;
+            p {
+              margin-bottom: 7px;
+            }
+            .progress-bar {
+              width: 100%;
+            }
+          }
+          .bouton {
+            .btn-pink {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #a-propos {
+    .a-propos-container {
+      img {
+        margin-right: 50px;
+      }
+      .texte-apropos {
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .encart-pourquoi {
+      padding: 40px;
+    }
+    .border {
+      margin-bottom: 100px;
+    }
+    .passions-container {
+      gap: 60px;
+      .passions {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .stars-entree {
+    display: none;
+  }
+  .ecran-accueil {
+    .logo {
+      width: 250px;
+    }
+  }
+
+  #navigation {
+    margin: 20px 100px;
+  }
+
+  .home {
+    margin: 70px 50px;
+    .hero-header {
+      margin: 50px 0;
+      img {
+        width: 300px;
+      }
+      .text-header {
+        margin: 50px 0;
+        padding-right: 0;
+        .btn-home {
+          padding-top: 50px;
+          align-items: center;
+          gap: 30px;
+          .btn-red,
+          .btn-pink {
+            padding: 20px 15px;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .stars {
+      margin: 40px 0;
+    }
+  }
+
+  .banniere-more {
+    margin: 0;
+    h3 {
+      margin-bottom: 20px;
+    }
+    .h3-desktop {
+      display: none;
+    }
+    .h3-mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #realisations {
+    .categories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-top: 40px;
+      .categories-btn {
+        width: fit-content;
+      }
+    }
+    .realisations {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        .realisation {
+          .bloc {
+            width: 295px;
+            height: 215px;
+          }
+        }
+      }
+    }
+  }
+
+  #a-propos {
+    .a-propos-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      img {
+        width: 300px;
+        margin-right: 0;
+      }
+      .texte-apropos {
+        margin-top: 60px;
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .encart-pourquoi {
+      padding: 25px;
+      margin-bottom: 60px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .formations {
+      margin-top: 40px;
+      .formations-container {
+        p {
+          text-align: left;
+        }
+        .boules {
+          width: 20px;
+          height: 10px;
+        }
+      }
+    }
+    .passions-container {
+      margin: 0;
+      margin-top: 40px;
+      gap: 16px;
+      .passions {
+        margin-bottom: 30px;
+      }
+    }
+    .stars {
+      margin: 30px;
+    }
+  }
+  .a-bientot {
+    margin-bottom: 50px;
+  }
+}

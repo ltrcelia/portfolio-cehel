@@ -23,15 +23,22 @@ $red-cherry: #e84e4f;
 $dark-blue: #2e3d7c;
 $powder-pink: #eec9e0;
 
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+
 body {
   font-family: $Regular;
   color: $dark-blue;
+  margin: 0 auto;
+}
+.home {
   max-width: 1440px;
-  margin: 0;
 }
 h1 {
   font-family: $Medium;
-  font-size: 35px;
+  font-size: 32px;
+  line-height: 130%;
   margin: 0;
 }
 h2 {
@@ -67,8 +74,10 @@ li {
   transition: 0.2s ease-in-out;
   cursor: pointer;
   font-family: $Regular;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #cb3f3f;
+    background-color: #df4141;
+    transform: translateY(-2px);
   }
 }
 .btn-pink {
@@ -80,11 +89,16 @@ li {
   transition: 0.2s ease-in-out;
   cursor: pointer;
   font-family: $Regular;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #ddb5cd;
+    background-color: #e8c1da;
+    transform: translateY(-2px);
   }
 }
-
+.btn-pink .active {
+  background-color: $red-cherry;
+  color: white;
+}
 .stars {
   display: flex;
   justify-content: center;

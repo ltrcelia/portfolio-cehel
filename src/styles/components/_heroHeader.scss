@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  img {
+    width: 360px;
+  }
   .text-header {
     width: 705px;
     padding-right: 90px;
@@ -9,6 +12,7 @@
       display: flex;
       justify-content: space-between;
       padding-top: 70px;
+      gap: 30px;
       .btn-red {
         font-size: 18px;
       }
@@ -23,7 +27,7 @@
   height: 250px;
   background-color: $dark-blue;
   border-radius: 20px;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
@@ -37,5 +41,11 @@
   }
   .btn-red {
     font-size: 16px;
+  }
+  .h3-desktop {
+    display: block;
+  }
+  .h3-mobile {
+    display: none;
   }
 }

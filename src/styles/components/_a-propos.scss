@@ -6,6 +6,7 @@
     align-items: center;
     img {
       margin-right: 100px;
+      width: 360px;
     }
     .texte-apropos {
       h2 {
@@ -71,6 +72,10 @@
     }
   }
   .border {
-    margin-bottom: 100px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-bottom: 2px solid #e84e4f;
+    display: block;
   }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { UilInstagram } from "@iconscout/react-unicons";
+import { UilLinkedin } from "@iconscout/react-unicons";
 
 const Footer = () => {
   return (
@@ -21,10 +23,20 @@ const Footer = () => {
           <li>contact.</li>
         </NavLink>
         <span>|</span>
-        <a href="https://www.instagram.com/cecexsketches/">Instagram</a>
+        <a
+          href="https://www.instagram.com/cecexsketches/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <UilInstagram />
+        </a>
         <span>|</span>
-        <a href="https://www.linkedin.com/in/celia-letellier-graphiste-freelance/">
-          Linkedin
+        <a
+          href="https://www.linkedin.com/in/celia-letellier-graphiste-freelance/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <UilLinkedin />
         </a>
       </ul>
     </div>

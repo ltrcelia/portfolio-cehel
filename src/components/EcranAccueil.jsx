@@ -6,6 +6,7 @@ import scrollez from "../assets/img/scrollez.png";
 const EcranAccueil = () => {
   return (
     <div className="ecran-accueil">
+      <div className="logo-container"></div>
       <img src={logo} alt="" className="logo" />
       <img src={starsEntree} alt="" className="stars-entree" />
       <div className="scrollez-container">

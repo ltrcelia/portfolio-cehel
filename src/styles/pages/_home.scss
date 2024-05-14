@@ -21,18 +21,19 @@
       font-size: 16px;
     }
   }
-  .a-bientot {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    margin-right: 55px;
-    p {
-      font-size: 30px;
-    }
-    .star {
-      position: absolute;
-      right: -5%;
-      bottom: 45%;
-    }
+}
+.a-bientot {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 55px;
+  margin-bottom: 70px;
+  p {
+    font-size: 30px;
+  }
+  .star {
+    position: absolute;
+    right: -4%;
+    bottom: 45%;
   }
 }

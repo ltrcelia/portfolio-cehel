@@ -20,10 +20,13 @@ const HeroHeader = () => {
             </button>
           </div>
         </div>
-        <img src={photoProfil} alt="" style={{ width: "360px" }} />
+        <img src={photoProfil} alt="" />
       </div>
       <div className="banniere-more">
-        <h3>Créative | Autonome | Polyvalente</h3>
+        <h3 className="h3-desktop">Créative | Autonome | Polyvalente</h3>
+        <h3 className="h3-mobile">
+          Créative <br /> Autonome <br /> Polyvalente
+        </h3>
         <button className="btn-red">
           <a href="#a-propos">En savoir plus sur moi.</a>
         </button>

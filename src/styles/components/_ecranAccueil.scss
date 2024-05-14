@@ -1,15 +1,18 @@
 .ecran-accueil {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
   background-color: $red-cherry;
   width: 100vw;
   height: 100vh;
   .logo {
-    position: relative;
-    transform-origin: center;
-    top: 40%;
-    left: 40%;
     width: 350px;
+  }
+  .stars-entree {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .scrollez-container {
     position: absolute;

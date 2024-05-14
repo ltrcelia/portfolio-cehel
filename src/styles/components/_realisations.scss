@@ -14,18 +14,20 @@
     }
   }
   .realisations {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
     .realisation {
       perspective: 1000px;
       .bloc {
         margin-bottom: 20px;
-        width: 550px;
-        height: 400px;
+        width: 500px;
+        height: 350px;
         background-color: #eeeeee;
         border-radius: 20px;
         transition: transform 0.5s;
+        cursor: pointer;
         &:hover {
           transform: rotateY(-5deg);
         }

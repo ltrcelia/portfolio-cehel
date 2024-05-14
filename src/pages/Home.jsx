@@ -6,6 +6,7 @@ import Realisations from "../components/Realisations";
 import EcranAccueil from "../components/EcranAccueil";
 import APropos from "../components/APropos";
 import petiteStars from "../assets/img/petite-stars.png";
+import EncartContact from "../components/EncartContact";
 
 const Home = () => {
   return (
@@ -17,26 +18,12 @@ const Home = () => {
         <HeroHeader />
         <Realisations />
         <APropos />
-        <div className="encart-contact">
-          <h3>
-            Envie de travailler avec moi ? <br />
-            Laissez moi un message ✨
-          </h3>
-          <button
-            className="btn-red"
-            onClick={() =>
-              (window.location.href = "mailto:celia.letellier@gmail.com")
-            }
-          >
-            Contact.
-          </button>
-        </div>
-        <div className="a-bientot">
-          <p>à bientôt !</p>
-          <img src={petiteStars} alt="Etoiles" className="star" />
-        </div>
       </div>
-
+      <EncartContact />
+      <div className="a-bientot">
+        <p>à bientôt !</p>
+        <img src={petiteStars} alt="Etoiles" className="star" />
+      </div>
       <Footer />
     </div>
   );

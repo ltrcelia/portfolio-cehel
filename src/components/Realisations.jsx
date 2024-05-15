@@ -60,7 +60,11 @@ const Realisations = () => {
           >
             {" "}
             <div className="realisation">
-              <div className="bloc"></div>
+              <img
+                src={projet.imagePrincipale}
+                alt="Images"
+                className="bloc"
+              ></img>
               <h3>{projet.titreDuProjet}</h3>
               <p>{projet.texteRapide}</p>
             </div>

@@ -10,7 +10,7 @@ import EncartContact from "../components/EncartContact";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main">
       <EcranAccueil />
       <Navigation />
 

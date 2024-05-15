@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams, useLocation } from "react-router-dom";
 import stars from "../assets/img/stars.png";
 import arrowPrev from "../assets/img/arrow-prev.png";
 import arrowNext from "../assets/img/arrow-next.png";
-import { useParams } from "react-router-dom";
 import { realisationsList } from "../components/RealisationsList";
 import EncartContact from "../components/EncartContact";
 import Navigation from "../components/Navigation";
@@ -10,11 +10,16 @@ import Footer from "../components/Footer";
 
 const RealisationPage = () => {
   const { titreDuProjet } = useParams();
+  const location = useLocation();
   const projet = realisationsList.find(
     (projet) =>
       projet.titreDuProjet ===
       decodeURIComponent(titreDuProjet.replace(/-/g, " "))
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   if (!projet) {
     return <div>Projet non trouvé</div>;

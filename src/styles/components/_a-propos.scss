@@ -1,4 +1,6 @@
 #a-propos {
+  max-width: 1160px;
+  margin: auto;
   .a-propos-container {
     display: flex;
     margin-bottom: 100px;
@@ -14,6 +16,7 @@
       }
       p {
         width: 80%;
+        line-height: 22px;
       }
     }
   }
@@ -31,16 +34,22 @@
     }
     p {
       text-align: center;
+      line-height: 22px;
     }
   }
-  .formations {
+  .experience {
+    margin-bottom: 60px;
+  }
+  .formations,
+  .experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
     margin-top: 60px;
-    .formations-container {
+    .formations-container,
+    .experience-container {
       display: flex;
       align-items: baseline;
       margin-bottom: 18px;
@@ -55,8 +64,30 @@
         color: $dark-blue;
         font-family: $SemiBold;
       }
+      p {
+        line-height: 30px;
+        max-width: 600px;
+      }
     }
   }
+
+  .langues-container {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    .langues {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .langue {
+      font-size: larger;
+      font-family: $SemiBold;
+      margin-bottom: 20px;
+    }
+  }
+
   .passions-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,7 +104,7 @@
   }
   .border {
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     width: 100%;
     border-bottom: 2px solid #e84e4f;
     display: block;

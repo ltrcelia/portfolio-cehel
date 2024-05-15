@@ -3,6 +3,7 @@ import designGraphique from "../assets/img/DM.png";
 import motionDesign from "../assets/img/MD.png";
 import webDesign from "../assets/img/WD.png";
 import more from "../assets/img/+.png";
+import stars from "../assets/img/stars.png";
 
 const Competences = () => {
   const [designVisible, setDesignVisible] = useState(false);
@@ -59,7 +60,7 @@ const Competences = () => {
       {designVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src="" alt="" />
+            <img src={designGraphique} alt="" />
             <div className="texte-container">
               <h2>Design de marque.</h2>
               <p className="title">
@@ -96,7 +97,7 @@ const Competences = () => {
       {motionVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src="" alt="" />
+            <img src={motionDesign} alt="" />
             <div className="texte-container">
               <h2>motion design.</h2>
               <p className="title">
@@ -127,7 +128,7 @@ const Competences = () => {
       {webVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src="" alt="" />
+            <img src={webDesign} alt="" />
             <div className="texte-container">
               <h2>web design et site web.</h2>
               <p className="title">
@@ -184,6 +185,9 @@ const Competences = () => {
           <span className="border"></span>
         </div>
       )}
+      <div className="stars">
+        <img src={stars} alt="Etoiles" className="star" />
+      </div>
     </div>
   );
 };

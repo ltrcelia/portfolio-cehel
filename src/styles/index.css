@@ -179,6 +179,9 @@ li {
 #realisation-page .premier-bloc .texte-explication h2 {
   margin-bottom: 20px;
 }
+#realisation-page .premier-bloc .texte-explication p {
+  line-height: 22px;
+}
 #realisation-page .deuxieme-bloc {
   display: flex;
   gap: 120px;
@@ -186,6 +189,9 @@ li {
 }
 #realisation-page .deuxieme-bloc h2 {
   margin-bottom: 20px;
+}
+#realisation-page .deuxieme-bloc p {
+  line-height: 22px;
 }
 #realisation-page .images-secondaires {
   display: flex;
@@ -199,6 +205,9 @@ li {
   background-color: #eee;
   border-radius: 20px;
   cursor: pointer;
+}
+#realisation-page .images-secondaires p {
+  line-height: 22px;
 }
 #realisation-page .fleches {
   display: flex;
@@ -342,9 +351,10 @@ li {
   text-align: center;
   text-decoration: none;
   color: #e84e4f;
+  border-bottom: 0px solid #e84e4f;
 }
 #navigation .navigation ul a:hover {
-  font-family: "Montserrat-SemiBold";
+  border-bottom: 1.5px solid #e84e4f;
 }
 #navigation .navigation ul a li {
   cursor: pointer;
@@ -771,6 +781,7 @@ li {
 }
 #a-propos .a-propos-container .texte-apropos p {
   width: 80%;
+  line-height: 22px;
 }
 #a-propos .encart-pourquoi {
   background-color: #eec9e0;
@@ -787,6 +798,7 @@ li {
 }
 #a-propos .encart-pourquoi p {
   text-align: center;
+  line-height: 22px;
 }
 #a-propos .formations {
   display: flex;
@@ -811,6 +823,9 @@ li {
 #a-propos .formations .formations-container .noms-ecoles {
   color: #2e3d7c;
   font-family: "Montserrat-SemiBold";
+}
+#a-propos .formations .formations-container p {
+  line-height: 30px;
 }
 #a-propos .passions-container {
   display: grid;

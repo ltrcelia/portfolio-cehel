@@ -9,15 +9,18 @@ const Navigation = () => {
           <img src={logo} alt="Logo" />
         </a>
         <ul className="liens-nav">
-          <a href="/">
+          <a href="/" className="a-link">
             <li>accueil.</li>
           </a>
-          <li>
-            <a href="/#realisations">réalisations.</a>
-          </li>
-          <li>
-            <a href="/#a-propos">à propos.</a>
-          </li>
+
+          <a href="/#realisations">
+            <li>réalisations.</li>
+          </a>
+
+          <a href="/#a-propos">
+            <li>à propos.</li>
+          </a>
+
           <a href="mailto:celia.letellier@gmail.com">
             <li className="contact-box">contact.</li>
           </a>
@@ -35,15 +38,15 @@ const Navigation = () => {
           <img src={logo} alt="Logo" />
         </a>
         <ul className="liens-nav">
-          <a href="/">
-            <li>accueil.</li>
+          <a href="/" >
+            <li className="link-border">accueil.</li>
           </a>
-          <li>
-            <a href="/#realisations">réalisations.</a>
-          </li>
-          <li>
-            <a href="/#a-propos">à propos.</a>
-          </li>
+          <a href="/#realisations">
+            <li className="link-border">réalisations.</li>
+          </a>
+          <a href="/#a-propos">
+            <li className="link-border">à propos.</li>
+          </a>
           <a href="mailto:celia.letellier@gmail.com">
             <li className="contact-box">contact.</li>
           </a>

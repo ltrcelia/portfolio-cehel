@@ -1,4 +1,6 @@
 #realisations {
+  max-width: 1160px;
+  margin: auto;
   h2 {
     margin-bottom: 1%;
   }
@@ -24,6 +26,7 @@
         margin-bottom: 20px;
         width: 500px;
         height: 350px;
+        object-fit: cover;
         background-color: #eeeeee;
         border-radius: 20px;
         transition: transform 0.5s;

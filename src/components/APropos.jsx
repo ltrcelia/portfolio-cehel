@@ -5,9 +5,6 @@ import photoProfil from "../assets/img/photo-profil.png";
 const APropos = () => {
   return (
     <div id="a-propos">
-      <div className="stars">
-        <img src={stars} alt="Etoiles" className="star" />
-      </div>
       <h2>à propos.</h2>
       <div className="a-propos-container">
         <img src={photoProfil} alt="" />
@@ -31,6 +28,76 @@ const APropos = () => {
           rapide, efficace, autonome, polyvalante, créative et de bien
           communiquer avec les clients pour comprendre leurs besoins.
         </p>
+      </div>
+
+      <h2>expériences.</h2>
+      <div className="experience">
+        <div className="experience-container">
+          <p>
+            depuis <br />
+            juillet 2020
+          </p>
+          <div className="boules"></div>
+          <p>
+            <span className="noms-ecoles">Graphiste et motion designer</span>{" "}
+            (France) <br /> Freelance
+            <br />
+            -Template de présentation pour Kiplin,
+            <br />
+            -Design de cartes intéractives pour Google, Lenovo, Caisse
+            d’épargne,
+            <br />
+            -Illustration à destination d’un motion design pour la SNCF et MSA,
+            <br />
+            -Portraits pour différents couples,
+            <br />
+            -Carte postal à animer via téléphone.
+          </p>
+        </div>
+
+        <div className="experience-container">
+          <p>
+            Avril Juillet 2018 <br />& Avril Mai 2017
+          </p>
+          <div className="boules"></div>
+          <p>
+            <span className="noms-ecoles">Graphiste digital marketing</span>{" "}
+            (Lorient 56)
+            <br /> SELLTIM, 5 mois
+            <br />
+            -Motion Design pour Ford et Le sous-marin Jaune.
+            <br />
+            -Montage vidéo publicitaire pour Konica Minolta, Class’croute,
+            Fermeture Philippe, Joaillerie Renan Lucas,
+            <br />
+            -Affiche et brochure de la Fête de l’Huitre,
+            <br />
+            -Post facebook pour le calendrier du Marketing pour plus de 30
+            clients de l’entreprise,
+            <br />
+            -Logo pour les entreprises Dany’s Rêve Lingerie, Les Délices Celtes,
+            Shoopiz,
+            <br />
+            -Agencement des site web de Bretagne Antennes, Dany’s Rêve, Les
+            Menuisiers Bretons.
+          </p>
+        </div>
+
+        <div className="experience-container">
+          <p>2014-2018</p>
+          <div className="boules"></div>
+          <p>
+            <span className="noms-ecoles">Infographiste</span> (Lorient 56)
+            <br /> Imprimerie de Basse Bretagne, 1 mois
+            <br />
+            -Apprentissage des techniques d’impression.
+            <br />
+            -Création d’une forme de découpe pour une étiquette de caramel.
+            <br />
+            -Amélioration de Carte de visite, entête de lettre et carte de
+            correspondance pour les entreprise Bretagne Sud Habitat.
+          </p>
+        </div>
       </div>
 
       <h2>formations.</h2>
@@ -86,6 +153,22 @@ const APropos = () => {
         <img src={stars} alt="Etoiles" className="star" />
       </div>
       <span className="border"></span>
+
+      <h2>langues.</h2>
+      <div className="langues-container">
+        <div className="langues">
+          <p className="langue">Anglais</p>
+          <p>TOEIC 750</p>
+        </div>
+        <div className="langues">
+          <p className="langue">Espagnol</p>
+          <p>A2</p>
+        </div>
+        <div className="langues">
+          <p className="langue">Français</p>
+          <p>Langue maternelle</p>
+        </div>
+      </div>
 
       <h2>passions.</h2>
       <div className="passions-container">

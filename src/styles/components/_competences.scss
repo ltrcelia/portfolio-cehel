@@ -1,4 +1,6 @@
 #competences {
+  max-width: 1160px;
+  margin: auto;
   .title {
     margin-bottom: 100px;
   }
@@ -40,10 +42,8 @@
       margin: 74px 50px;
       display: flex;
       img {
-        width: 320px;
-        height: 320px;
-        background-color: #eee;
-        border-radius: 20px;
+        width: 220px;
+        height: 200px;
       }
       .texte-container {
         margin-left: 100px;

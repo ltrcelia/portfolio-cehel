@@ -4,7 +4,7 @@ import stars from "../assets/img/stars.png";
 
 const HeroHeader = () => {
   return (
-    <div>
+    <div id="hero-header">
       <div className="hero-header">
         <div className="text-header">
           <h1>

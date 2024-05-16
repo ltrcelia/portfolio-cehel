@@ -3,7 +3,18 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  background-color: $red-cherry;
+  // background-color: $red-cherry;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(232, 78, 79, 1) 31%,
+  //   rgba(230, 142, 143, 1) 68%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+  background: linear-gradient(
+    142deg,
+    rgba(232, 78, 79, 1) 31%,
+    rgba(238, 201, 224, 1) 100%
+  );
   width: 100vw;
   height: 100vh;
   .logo {

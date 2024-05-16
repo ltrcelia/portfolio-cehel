@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import stars from "../assets/img/stars.png";
-import Competences from "./Competences";
 import { realisationsList } from "./RealisationsList";
 import { Link } from "react-router-dom";
 
@@ -22,29 +20,31 @@ const Realisations = () => {
       <h2>réalisations.</h2>
       <div className="categories">
         <button
-          className={categorieActive === "all" ? "btn-pink active" : "btn-pink"}
+          className={`btn-pink ${categorieActive === "all" ? "active" : ""}`}
           onClick={() => filtrerRealisations("all")}
         >
           Tous
         </button>
         <button
-          className={
-            categorieActive === "design" ? "btn-pink active" : "btn-pink"
-          }
+          className={`btn-pink ${
+            categorieActive === "design graphique" ? "active" : ""
+          }`}
           onClick={() => filtrerRealisations("design graphique")}
         >
           Design graphique
         </button>
         <button
-          className={
-            categorieActive === "motion" ? "btn-pink active" : "btn-pink"
-          }
+          className={`btn-pink ${
+            categorieActive === "motion design" ? "active" : ""
+          }`}
           onClick={() => filtrerRealisations("motion design")}
         >
           Motion design
         </button>
         <button
-          className={categorieActive === "web" ? "btn-pink active" : "btn-pink"}
+          className={`btn-pink ${
+            categorieActive === "web design" ? "active" : ""
+          }`}
           onClick={() => filtrerRealisations("web design")}
         >
           Web design et site web
@@ -58,7 +58,6 @@ const Realisations = () => {
             )}`}
             key={index}
           >
-            {" "}
             <div className="realisation">
               <img
                 src={projet.imagePrincipale}
@@ -71,10 +70,6 @@ const Realisations = () => {
           </Link>
         ))}
       </div>
-      <div className="stars">
-        <img src={stars} alt="Etoiles" className="star" />
-      </div>
-      <Competences />
     </div>
   );
 };

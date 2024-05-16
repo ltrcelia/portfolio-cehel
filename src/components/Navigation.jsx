@@ -2,6 +2,17 @@ import React from "react";
 import logo from "../assets/img/logo.svg";
 
 const Navigation = () => {
+  const scrollToPosition = (position) => {
+    window.scrollTo({
+      top: position,
+      behavior: "smooth",
+    });
+  };
+
+  const handleAccueilClick = (event) => {
+    event.preventDefault();
+    scrollToPosition(838);
+  };
   return (
     <div id="navigation">
       <div className="navigation">
@@ -9,7 +20,7 @@ const Navigation = () => {
           <img src={logo} alt="Logo" />
         </a>
         <ul className="liens-nav">
-          <a href="/" className="a-link">
+          <a href="/" className="a-link" onClick={handleAccueilClick}>
             <li>accueil.</li>
           </a>
 
@@ -38,7 +49,7 @@ const Navigation = () => {
           <img src={logo} alt="Logo" />
         </a>
         <ul className="liens-nav">
-          <a href="/" >
+          <a href="/">
             <li className="link-border">accueil.</li>
           </a>
           <a href="/#realisations">

@@ -3,7 +3,6 @@ import designGraphique from "../assets/img/DM.png";
 import motionDesign from "../assets/img/MD.png";
 import webDesign from "../assets/img/WD.png";
 import more from "../assets/img/+.png";
-import stars from "../assets/img/stars.png";
 
 const Competences = () => {
   const [designVisible, setDesignVisible] = useState(false);
@@ -30,28 +29,28 @@ const Competences = () => {
       <h2 className="title">compétences.</h2>
       <div className="competences">
         <div className="design-graphique">
-          <img src={designGraphique} alt="" />
+          <img src={designGraphique} alt="Icone design graphique" />
           <h3>design de marque</h3>
           <div className="more">
-            <img src={more} alt="" />
+            <img src={more} alt="Icone plus" />
             <p onClick={toggleDesignVisibility}>Découvrir</p>
           </div>
         </div>
 
         <div className="motion-design">
-          <img src={motionDesign} alt="" />
+          <img src={motionDesign} alt="Icone motion design" />
           <h3>motion design.</h3>
           <div className="more">
-            <img src={more} alt="" />
+            <img src={more} alt="Icone plus" />
             <p onClick={toggleMotionVisibility}>Découvrir</p>
           </div>
         </div>
 
         <div className="web-design">
-          <img src={webDesign} alt="" />
+          <img src={webDesign} alt="Icone web design et site web" />
           <h3>web design et site web.</h3>
           <div className="more">
-            <img src={more} alt="" />
+            <img src={more} alt="Icone plus" />
             <p onClick={toggleWebVisibility}>Découvrir</p>
           </div>
         </div>
@@ -60,7 +59,7 @@ const Competences = () => {
       {designVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src={designGraphique} alt="" />
+            <img src={designGraphique} alt="Icone design graphique" />
             <div className="texte-container">
               <h2>Design de marque.</h2>
               <p className="title">
@@ -85,9 +84,9 @@ const Competences = () => {
                   <div className="progress id"></div>
                 </div>
               </div>
-              <div className="bouton">
+              {/* <div className="bouton">
                 <button className="btn-pink">Découvrir</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <span className="border"></span>
@@ -97,7 +96,7 @@ const Competences = () => {
       {motionVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src={motionDesign} alt="" />
+            <img src={motionDesign} alt="Icone motion design" />
             <div className="texte-container">
               <h2>motion design.</h2>
               <p className="title">
@@ -116,9 +115,9 @@ const Competences = () => {
                   <div className="progress pp"></div>
                 </div>
               </div>
-              <div className="bouton">
+              {/* <div className="bouton">
                 <button className="btn-pink">Découvrir</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <span className="border"></span>
@@ -128,7 +127,7 @@ const Competences = () => {
       {webVisible && (
         <div className="hidden-container">
           <div className="hidden">
-            <img src={webDesign} alt="" />
+            <img src={webDesign} alt="Icone web design et site web" />
             <div className="texte-container">
               <h2>web design et site web.</h2>
               <p className="title">
@@ -177,17 +176,14 @@ const Competences = () => {
                   <div className="progress wp"></div>
                 </div>
               </div>
-              <div className="bouton">
+              {/* <div className="bouton">
                 <button className="btn-pink">Découvrir</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <span className="border"></span>
         </div>
       )}
-      <div className="stars">
-        <img src={stars} alt="Etoiles" className="star" />
-      </div>
     </div>
   );
 };

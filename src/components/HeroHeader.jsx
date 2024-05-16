@@ -1,6 +1,5 @@
 import React from "react";
 import photoProfil from "../assets/img/photo-profil.png";
-import stars from "../assets/img/stars.png";
 
 const HeroHeader = () => {
   return (
@@ -30,9 +29,6 @@ const HeroHeader = () => {
         <button className="btn-red">
           <a href="#a-propos">En savoir plus sur moi.</a>
         </button>
-      </div>
-      <div className="stars">
-        <img src={stars} alt="Etoiles" className="star" />
       </div>
     </div>
   );

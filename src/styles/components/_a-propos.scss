@@ -1,6 +1,7 @@
 #a-propos {
   max-width: 1160px;
   margin: auto;
+  padding: 80px 0;
   .a-propos-container {
     display: flex;
     margin-bottom: 100px;
@@ -48,6 +49,7 @@
     align-items: center;
     text-align: justify;
     margin-top: 60px;
+    padding-bottom: 80px;
     .formations-container,
     .experience-container {
       display: flex;
@@ -108,5 +110,6 @@
     width: 100%;
     border-bottom: 2px solid #e84e4f;
     display: block;
+    padding-top: 80px;
   }
 }

@@ -30,7 +30,7 @@ const APropos = () => {
         </p>
       </div>
 
-      <h2>expériences.</h2>
+      {/* <h2>expériences.</h2>
       <div className="experience">
         <div className="experience-container">
           <p>
@@ -98,7 +98,7 @@ const APropos = () => {
             correspondance pour les entreprise Bretagne Sud Habitat.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <h2>formations.</h2>
       <div className="formations">
@@ -133,8 +133,8 @@ const APropos = () => {
           <p>2013-2014</p>
           <div className="boules"></div>
           <p>
-            <span className="noms-ecoles">Rennes 2</span> Licence 1 Information
-            et Communication
+            <span className="noms-ecoles">Rennes 2</span> (Rennes 35) Licence 1
+            Information et Communication
           </p>
         </div>
 
@@ -154,7 +154,7 @@ const APropos = () => {
       </div>
       <span className="border"></span>
 
-      <h2>langues.</h2>
+      {/* <h2>langues.</h2>
       <div className="langues-container">
         <div className="langues">
           <p className="langue">Anglais</p>
@@ -168,7 +168,7 @@ const APropos = () => {
           <p className="langue">Français</p>
           <p>Langue maternelle</p>
         </div>
-      </div>
+      </div> */}
 
       <h2>passions.</h2>
       <div className="passions-container">
@@ -196,10 +196,6 @@ const APropos = () => {
           <p className="icones">🏋️️</p>
           <p>musculation.</p>
         </div>
-      </div>
-
-      <div className="stars">
-        <img src={stars} alt="Etoiles" className="star" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/img/logo.svg";
 
 const Navigation = () => {
@@ -11,10 +11,32 @@ const Navigation = () => {
 
   const handleAccueilClick = (event) => {
     event.preventDefault();
-    scrollToPosition(838);
+    scrollToPosition(0);
   };
+
+  const [lastScroll, setLastScroll] = useState(0);
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll < lastScroll) {
+        setNavbarVisible(true);
+      } else {
+        setNavbarVisible(false);
+      }
+      setLastScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScroll]);
+
   return (
-    <div id="navigation">
+    <div id="navigation" style={{ top: navbarVisible ? "0" : "-90px" }}>
       <div className="navigation">
         <a href="/">
           <img src={logo} alt="Logo" />

@@ -1,9 +1,14 @@
 import feteDeLhuitre from "../assets/img/fete-de-lhuitre.jpg";
 import auRayonDesMerveilles from "../assets/img/ardm.jpg";
 import museeDeNantes from "../assets/img/midn.jpg";
-import biome from "../assets/img/biome.jpg";
-import manVSforest from "../assets/img/manVSforest.jpg";
-import lotr from "../assets/img/lotr.jpg";
+import stars from "../assets/img/stars.png";
+// import biome from "../assets/img/biome.jpg";
+import biomeVideo from "../assets/video/biome.mp4";
+// import manVSforest from "../assets/img/manVSforest.jpg";
+import manVSforestVideo from "../assets/video/manvsforest.mp4";
+// import lotr from "../assets/img/lotr.jpg";
+import lotrVideo from "../assets/video/sda.mp4";
+// import showreel from "../assets/video/showreel.mp4";
 
 export const realisationsList = [
   {
@@ -14,14 +19,14 @@ export const realisationsList = [
     client: "Fête de l'huître",
     theme: "Huître",
     categorie: "design graphique",
-    imagePrincipale: feteDeLhuitre,
+    image: feteDeLhuitre,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
     enjeux:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
-    imagesSecondaires: [feteDeLhuitre, museeDeNantes],
+    imagesSecondaires: [feteDeLhuitre, museeDeNantes, auRayonDesMerveilles],
     id: "1",
   },
   {
@@ -32,7 +37,7 @@ export const realisationsList = [
     client: "Au rayon des merveille",
     theme: "Livre",
     categorie: "design graphique",
-    imagePrincipale: auRayonDesMerveilles,
+    image: auRayonDesMerveilles,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -50,7 +55,7 @@ export const realisationsList = [
     client: "Musée de l'imprimerie de Nantes",
     theme: "Imprimerie",
     categorie: "design graphique",
-    imagePrincipale: museeDeNantes,
+    image: museeDeNantes,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -68,7 +73,7 @@ export const realisationsList = [
     client: "Biome",
     theme: "Maquillage",
     categorie: "motion design",
-    imagePrincipale: biome,
+    video: biomeVideo,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -86,7 +91,7 @@ export const realisationsList = [
     client: "Man vs Forest",
     theme: "theme",
     categorie: "motion design",
-    imagePrincipale: manVSforest,
+    video: manVSforestVideo,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -104,7 +109,7 @@ export const realisationsList = [
     client: "Le seigneur des anneaux",
     theme: "theme",
     categorie: "motion design",
-    imagePrincipale: lotr,
+    video: lotrVideo,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -114,33 +119,33 @@ export const realisationsList = [
     imagesSecondaires: "imagesSecondaires",
     id: "6",
   },
+  // {
+  //   titreDuProjet: "Showreel",
+  //   type: "motion",
+  //   texteRapide: "Présentation",
+  //   annee: "2022",
+  //   client: "Showreel",
+  //   theme: "theme",
+  //   categorie: "motion design",
+  //   video: showreel,
+  //   explication:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
+  //   processus:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
+  //   enjeux:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
+  //   imagesSecondaires: "imagesSecondaires",
+  //   id: "7",
+  // },
   {
     titreDuProjet: "Projet web design 1",
     type: "web",
     texteRapide: "Site web",
-    annee: "annee",
+    annee: "2023",
     client: "client",
     theme: "theme",
     categorie: "web design",
-    imagePrincipale: "imagePrincipale",
-    explication:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
-    processus:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
-    enjeux:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
-    imagesSecondaires: "imagesSecondaires",
-    id: "7",
-  },
-  {
-    titreDuProjet: "Projet web design 2",
-    type: "web",
-    texteRapide: "Site web",
-    annee: "annee",
-    client: "client",
-    theme: "theme",
-    categorie: "web design",
-    imagePrincipale: "imagePrincipale",
+    image: stars,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -151,14 +156,14 @@ export const realisationsList = [
     id: "8",
   },
   {
-    titreDuProjet: "Projet web design 3",
+    titreDuProjet: "Projet web design 2",
     type: "web",
     texteRapide: "Site web",
-    annee: "annee",
+    annee: "2023",
     client: "client",
     theme: "theme",
     categorie: "web design",
-    imagePrincipale: "imagePrincipale",
+    image: stars,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -169,14 +174,14 @@ export const realisationsList = [
     id: "9",
   },
   {
-    titreDuProjet: "Projet web design 4",
+    titreDuProjet: "Projet web design 3",
     type: "web",
     texteRapide: "Site web",
-    annee: "annee",
+    annee: "2024",
     client: "client",
     theme: "theme",
     categorie: "web design",
-    imagePrincipale: "imagePrincipale",
+    image: stars,
     explication:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
     processus:
@@ -185,5 +190,23 @@ export const realisationsList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
     imagesSecondaires: "imagesSecondaires",
     id: "10",
+  },
+  {
+    titreDuProjet: "Projet web design 4",
+    type: "web",
+    texteRapide: "Site web",
+    annee: "2024",
+    client: "client",
+    theme: "theme",
+    categorie: "web design",
+    image: stars,
+    explication:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam. Vivamus ullamcorper libero vitae eros efficitur, in iaculis metus volutpat.",
+    processus:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
+    enjeux:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
+    imagesSecondaires: "imagesSecondaires",
+    id: "11",
   },
 ];

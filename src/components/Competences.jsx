@@ -6,22 +6,35 @@ import more from "../assets/img/+.png";
 
 const Competences = () => {
   const [designVisible, setDesignVisible] = useState(false);
+  const [motionVisible, setMotionVisible] = useState(false);
+  const [webVisible, setWebVisible] = useState(false);
+
   const toggleDesignVisibility = () => {
     setDesignVisible(!designVisible);
     setMotionVisible(false);
     setWebVisible(false);
+    scrollToAnchor("design-graphique");
   };
-  const [motionVisible, setMotionVisible] = useState(false);
+
   const toggleMotionVisibility = () => {
     setDesignVisible(false);
     setMotionVisible(!motionVisible);
     setWebVisible(false);
+    scrollToAnchor("motion-design");
   };
-  const [webVisible, setWebVisible] = useState(false);
+
   const toggleWebVisibility = () => {
     setDesignVisible(false);
     setMotionVisible(false);
     setWebVisible(!webVisible);
+    scrollToAnchor("web-design");
+  };
+
+  const scrollToAnchor = (anchorId) => {
+    const anchorElement = document.getElementById(anchorId);
+    if (anchorElement) {
+      anchorElement.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -30,7 +43,7 @@ const Competences = () => {
       <div className="competences">
         <div className="design-graphique">
           <img src={designGraphique} alt="Icone design graphique" />
-          <h3>design de marque</h3>
+          <h3 id="design-graphique">design de marque</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />
             <p onClick={toggleDesignVisibility}>Découvrir</p>
@@ -39,7 +52,7 @@ const Competences = () => {
 
         <div className="motion-design">
           <img src={motionDesign} alt="Icone motion design" />
-          <h3>motion design.</h3>
+          <h3 id="motion-design">motion design.</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />
             <p onClick={toggleMotionVisibility}>Découvrir</p>
@@ -48,7 +61,7 @@ const Competences = () => {
 
         <div className="web-design">
           <img src={webDesign} alt="Icone web design et site web" />
-          <h3>web design et site web.</h3>
+          <h3 id="web-design">web design et site web.</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />
             <p onClick={toggleWebVisibility}>Découvrir</p>

@@ -15,6 +15,18 @@ const Realisations = () => {
           (projet) => projet.categorie === categorieActive
         );
 
+  const handleMouseEnter = (e) => {
+    e.target.play();
+  };
+
+  const handleMouseLeave = (e) => {
+    e.target.pause();
+  };
+
+  const handleLoadedMetadata = (e) => {
+    e.target.currentTime = 2;
+  };
+
   return (
     <div id="realisations">
       <h2>réalisations.</h2>
@@ -59,11 +71,19 @@ const Realisations = () => {
             key={index}
           >
             <div className="realisation">
-              <img
-                src={projet.imagePrincipale}
-                alt="Images"
-                className="bloc"
-              ></img>
+              {projet.image && (
+                <img src={projet.image} alt="Images" className="bloc"></img>
+              )}
+              {projet.video && (
+                <video
+                  src={projet.video}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  onLoadedMetadata={handleLoadedMetadata}
+                  muted
+                  className="bloc"
+                />
+              )}
               <h3>{projet.titreDuProjet}</h3>
               <p>{projet.texteRapide}</p>
             </div>

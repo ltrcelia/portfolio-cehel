@@ -69,6 +69,7 @@ const Realisations = () => {
               projet.titreDuProjet.replace(/\s+/g, "-")
             )}`}
             key={index}
+            target="_blank"
           >
             <div className="realisation">
               {projet.image && (

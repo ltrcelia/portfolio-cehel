@@ -7,7 +7,7 @@ const APropos = () => {
     <div id="a-propos">
       <h2>à propos.</h2>
       <div className="a-propos-container">
-        <img src={photoProfil} alt="" />
+        <img src={photoProfil} alt="Célia" />
         <div className="texte-apropos">
           <h2>Hello, je suis Célia.</h2>
           <p>
@@ -178,15 +178,15 @@ const APropos = () => {
         </div>
         <div className="passions">
           <p className="icones">📚</p>
-          <p>lecture.</p>
+          <p>fantasy - SF.</p>
         </div>
         <div className="passions">
           <p className="icones">🎮</p>
-          <p>jeux vidéos.</p>
+          <p>zelda.</p>
         </div>
         <div className="passions">
           <p className="icones">🛩</p>
-          <p>voyage.</p>
+          <p>royaume-uni.</p>
         </div>
         <div className="passions">
           <p className="icones">🖋</p>
@@ -194,7 +194,7 @@ const APropos = () => {
         </div>
         <div className="passions">
           <p className="icones">🏋️️</p>
-          <p>musculation.</p>
+          <p>badminton.</p>
         </div>
       </div>
     </div>

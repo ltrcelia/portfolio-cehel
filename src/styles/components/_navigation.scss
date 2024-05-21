@@ -4,7 +4,7 @@
   left: 0;
   background-color: white;
   padding: 20px 150px;
-  z-index: 100;
+  z-index: 1000;
   transition: 0.3s;
   .navigation {
     display: flex;
@@ -52,10 +52,10 @@
       }
     }
   }
-  .menu-burger {
-    display: none;
-  }
   #btn {
     display: none;
   }
+}
+.menu-burger {
+  display: none;
 }

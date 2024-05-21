@@ -44,7 +44,7 @@ export const realisationsList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
     enjeux:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
-    imagesSecondaires: "imagesSecondaires",
+    imagesSecondaires: [feteDeLhuitre, museeDeNantes, auRayonDesMerveilles],
     id: "2",
   },
   {
@@ -62,7 +62,7 @@ export const realisationsList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse eu egestas urna. Nam sed nisi tellus. Suspendisse vel ligula diam.",
     enjeux:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ornare ligula. Vestibulum laoreet, nisl sit amet tempus consequat, tellus nunc rhoncus libero, non pharetra sapien sapien ut enim. Curabitur elementum non turpis elementum malesuada. Nulla interdum ipsum eget aliquam efficitur. Ut scelerisque lorem facilisis quam volutpat efficitur. Ut dignissim ac tellus quis fringilla. Suspendisse.",
-    imagesSecondaires: "imagesSecondaires",
+    imagesSecondaires: [feteDeLhuitre, museeDeNantes, auRayonDesMerveilles],
     id: "3",
   },
   {

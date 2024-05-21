@@ -70,6 +70,7 @@
   .lightbox {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -79,39 +80,33 @@
     background-color: rgba(238, 201, 224, 0.5);
     .lightbox-content {
       img {
+        border-radius: 20px;
         height: 90vh;
       }
     }
   }
   .fleches {
+    margin: auto;
     position: fixed;
-    top: 50%;
-    margin: 80px 0;
-    .flex {
-      gap: 18px;
-      display: flex;
-      align-items: center;
-    }
-    .arrow-prev {
-      position: absolute;
+    top: 60%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    left: 8%;
+    .arrow-prev,
+    .arrow-next {
+      background-color: $powder-pink;
+      padding: 13px 10px;
+      border-radius: 100%;
       transition: 0.3s ease-in-out;
       cursor: pointer;
-      background-color: $powder-pink;
-      padding: 14px 10px;
-      border-radius: 100%;
-      left: -70px;
+    }
+    .arrow-prev {
       &:hover {
         transform: translateX(-5px);
       }
     }
     .arrow-next {
-      position: absolute;
-      background-color: $powder-pink;
-      padding: 14px 10px;
-      border-radius: 100%;
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-      right: -1165px;
       &:hover {
         transform: translateX(5px);
       }
@@ -167,26 +162,16 @@
   }
 }
 
-@media screen and (max-width: 1360px) {
-  #realisation-page {
-    .images-secondaires {
-      img {
-        width: 365px;
-        height: 245px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: $tablet) {
   #realisation-page {
+    padding: 75px 75px;
     .images-secondaires {
       display: flex;
       flex-direction: column;
       align-items: center;
       img {
         width: 365px;
-        height: 245px;
+        height: 315px;
       }
     }
   }
@@ -194,6 +179,7 @@
 
 @media screen and (max-width: $mobile) {
   #realisation-page {
+    padding: 0;
     margin: 70px 50px;
     h2,
     p {
@@ -210,13 +196,20 @@
         margin-bottom: 0;
       }
     }
+    .lightbox {
+      .lightbox-content {
+        img {
+          height: 55vh;
+        }
+      }
+    }
     .premier-bloc {
       display: flex;
       flex-direction: column;
       align-items: center;
       img {
         width: 295px;
-        height: 235px;
+        height: 245px;
       }
       .texte-explication {
         width: 100%;
@@ -231,7 +224,7 @@
     .images-secondaires {
       img {
         width: 295px;
-        height: 235px;
+        height: 245px;
       }
     }
     .fleches {
@@ -245,5 +238,6 @@
   }
   .encart-contact {
     border-radius: 0;
+    width: 100vw;
   }
 }

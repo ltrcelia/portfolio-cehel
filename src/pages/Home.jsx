@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import HeroHeader from "../components/HeroHeader";
 import Realisations from "../components/Realisations";
-import EcranAccueil from "../components/EcranAccueil";
+// import EcranAccueil from "../components/EcranAccueil";
 import APropos from "../components/APropos";
 import Competences from "../components/Competences";
 import petiteStars from "../assets/img/petite-stars.png";
@@ -54,8 +52,7 @@ const Home = () => {
         <img src={stars} alt="Etoiles" className="star" />
       </div>
 
-      <EcranAccueil />
-      <Navigation />
+      {/* <EcranAccueil /> */}
 
       <div className="home">
         <HeroHeader />
@@ -80,7 +77,6 @@ const Home = () => {
         <p>à bientôt !</p>
         <img src={petiteStars} alt="Etoiles" className="star" />
       </div>
-      <Footer />
     </div>
   );
 };

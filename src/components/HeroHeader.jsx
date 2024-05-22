@@ -19,7 +19,7 @@ const HeroHeader = () => {
             </button>
           </div>
         </div>
-        <img src={photoProfil} alt="" className="hero-photo" />
+        <img src={photoProfil} alt="Célia" className="hero-photo" />
       </div>
       <div className="banniere-more">
         <h3 className="h3-desktop">Créative | Autonome | Polyvalente</h3>

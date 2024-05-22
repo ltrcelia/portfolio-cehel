@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import RealisationPage from "./pages/RealisationPage";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-// import Realisations from "./components/Realisations";
 
 const App = () => {
   return (
@@ -12,7 +11,6 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/realisations/*" element={<Realisations />} /> */}
         <Route
           path="/realisation/:titreDuProjet"
           element={<RealisationPage />}

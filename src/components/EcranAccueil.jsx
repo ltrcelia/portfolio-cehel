@@ -32,16 +32,16 @@ const EcranAccueil = () => {
         <div className="logo-container"></div>
         <img
           src={logo}
-          alt=""
+          alt="Logo céhel"
           className={`logo ${scrolling ? "scrolled" : ""}`}
         />
         <img
           src={starsEntree}
-          alt=""
+          alt="Etoiles"
           className={`stars-entree ${scrolling ? "scrolled" : ""}`}
         />
         <div className="scrollez-container">
-          <img src={scrollez} alt="" className="scrollez" />
+          <img src={scrollez} alt="Scrollez" className="scrollez" />
           <p>Scrollez</p>
         </div>
       </div>

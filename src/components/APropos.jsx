@@ -170,22 +170,22 @@ const APropos = () => {
         </div>
       </div> */}
 
-      <h2>passions.</h2>
+      <h2>intérêts.</h2>
       <div className="passions-container">
         <div className="passions">
           <p className="icones">✏️</p>
           <p>dessin.</p>
         </div>
         <div className="passions">
-          <p className="icones">📚</p>
+          <p className="icones">🧙‍♂️</p>
           <p>fantasy - SF.</p>
         </div>
         <div className="passions">
-          <p className="icones">🎮</p>
+          <p className="icones">🧝‍♀️</p>
           <p>zelda.</p>
         </div>
         <div className="passions">
-          <p className="icones">🛩</p>
+          <p className="icones">🇬🇧</p>
           <p>royaume-uni.</p>
         </div>
         <div className="passions">
@@ -193,7 +193,7 @@ const APropos = () => {
           <p>écriture.</p>
         </div>
         <div className="passions">
-          <p className="icones">🏋️️</p>
+          <p className="icones">🏸️</p>
           <p>badminton.</p>
         </div>
       </div>

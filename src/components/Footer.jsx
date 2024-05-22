@@ -1,27 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { UilInstagram } from "@iconscout/react-unicons";
 import { UilLinkedin } from "@iconscout/react-unicons";
 
 const Footer = () => {
   return (
-    <div className="navigation-footer">
+    <div className="footer">
       <ul>
-        <NavLink to="/">
+        <Link to="/">
           <li>accueil.</li>
-        </NavLink>
+        </Link>
         <span>|</span>
-        <NavLink to="/realisations">
+        <Link to="/#realisations">
           <li>réalisations.</li>
-        </NavLink>
+        </Link>
         <span>|</span>
-        <NavLink to="/a-propos">
+        <Link to="/#a-propos">
           <li>à propos.</li>
-        </NavLink>
+        </Link>
         <span>|</span>
-        <NavLink to="mailto:celia.letellier@gmail.com">
+        <Link to="mailto:celia.letellier@gmail.com">
           <li>contact.</li>
-        </NavLink>
+        </Link>
         <span>|</span>
         <a
           href="https://www.instagram.com/cecexsketches/"

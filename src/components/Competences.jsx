@@ -97,9 +97,6 @@ const Competences = () => {
                   <div className="progress id"></div>
                 </div>
               </div>
-              {/* <div className="bouton">
-                <button className="btn-pink">Découvrir</button>
-              </div> */}
             </div>
           </div>
           <span className="border"></span>
@@ -128,9 +125,6 @@ const Competences = () => {
                   <div className="progress pp"></div>
                 </div>
               </div>
-              {/* <div className="bouton">
-                <button className="btn-pink">Découvrir</button>
-              </div> */}
             </div>
           </div>
           <span className="border"></span>
@@ -189,9 +183,6 @@ const Competences = () => {
                   <div className="progress wp"></div>
                 </div>
               </div>
-              {/* <div className="bouton">
-                <button className="btn-pink">Découvrir</button>
-              </div> */}
             </div>
           </div>
           <span className="border"></span>

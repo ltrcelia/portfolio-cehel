@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/img/logo.svg";
 import stars from "../assets/img/stars.png";
 
@@ -6,6 +7,7 @@ const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
   const [navbarVisible, setNavbarVisible] = useState(true);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -15,7 +17,6 @@ const Navigation = () => {
       document.body.style.overflow = "";
     }
   };
-
   const closeMenu = () => {
     setMenuOpen(false);
     document.body.style.overflow = "";
@@ -31,6 +32,8 @@ const Navigation = () => {
   const handleAccueilClick = (event) => {
     event.preventDefault();
     scrollToPosition(0);
+    navigate("/");
+    closeMenu();
   };
 
   useEffect(() => {
@@ -44,7 +47,6 @@ const Navigation = () => {
       setLastScroll(currentScroll);
     };
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -55,22 +57,19 @@ const Navigation = () => {
       <div className="primary-navigation">
         {" "}
         <div className="navigation">
-          <a href="/">
-            <img src={logo} alt="Logo" />
-          </a>
+          <Link to="/">
+            <img src={logo} alt="Logo" onClick={handleAccueilClick} />
+          </Link>
           <ul className="liens-nav">
-            <a href="/" className="a-link" onClick={handleAccueilClick}>
+            <Link to="/" onClick={handleAccueilClick}>
               <li>accueil.</li>
-            </a>
-
-            <a href="/#realisations">
+            </Link>
+            <Link to="/#realisations-link">
               <li>réalisations.</li>
-            </a>
-
-            <a href="/#a-propos">
+            </Link>
+            <Link to="/#a-propos-link">
               <li>à propos.</li>
-            </a>
-
+            </Link>
             <a href="mailto:celia.letellier@gmail.com">
               <li className="contact-box">contact.</li>
             </a>
@@ -92,21 +91,17 @@ const Navigation = () => {
           <img src={stars} alt="Images d'étoiles" />
         </div>
         <ul>
-          <a href="/">
-            <li className="link-border" onClick={closeMenu}>
+          <Link to="/">
+            <li className="link-border" onClick={handleAccueilClick}>
               accueil.
             </li>
-          </a>
-          <a href="/#realisations">
-            <li className="link-border" onClick={closeMenu}>
-              réalisations.
-            </li>
-          </a>
-          <a href="/#a-propos">
-            <li className="link-border" onClick={closeMenu}>
-              à propos.
-            </li>
-          </a>
+          </Link>
+          <Link to="/#realisations-link" onClick={closeMenu}>
+            <li className="link-border">réalisations.</li>
+          </Link>
+          <Link to="/#a-propos-link" onClick={closeMenu}>
+            <li className="link-border">à propos.</li>
+          </Link>
           <a href="mailto:celia.letellier@gmail.com">
             <li className="contact-box">contact.</li>
           </a>

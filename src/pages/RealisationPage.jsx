@@ -10,6 +10,7 @@ const RealisationPage = () => {
   const { titreDuProjet } = useParams();
   const [isMuted, setIsMuted] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
+
   const currentRealIndex = realisationsList.findIndex(
     (projet) =>
       projet.titreDuProjet ===
@@ -96,17 +97,18 @@ const RealisationPage = () => {
           top: followerPosition.y,
         }}
       >
-        <img src={stars} alt="Images d'étoiles" className="star" />
+        <img src={stars} alt="Etoiles" className="star" />
       </div>
+
       <div id="realisation-page">
         <h1>{projet.titreDuProjet}</h1>
 
         <div className="infos">
           <p>{projet.annee}</p>
-          <p>{projet.client}</p>
           <p>{projet.theme}</p>
           <p>{projet.categorie}</p>
         </div>
+
         {projet.image && (
           <div className="premier-bloc">
             <img
@@ -179,10 +181,10 @@ const RealisationPage = () => {
 
         <div className="fleches">
           <div className="arrow-prev fixed" onClick={handlePrevClick}>
-            <img src={arrowPrev} alt="Images de flèche précédente" />
+            <img src={arrowPrev} alt="Flèche précédente" />
           </div>
           <div className="arrow-next fixed" onClick={handleNextClick}>
-            <img src={arrowNext} alt="Images de flèche suivante" />
+            <img src={arrowNext} alt="Flèche suivante" />
           </div>
         </div>
       </div>

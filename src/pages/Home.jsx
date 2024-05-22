@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import HeroHeader from "../components/HeroHeader";
 import Realisations from "../components/Realisations";
-// import EcranAccueil from "../components/EcranAccueil";
+import EcranAccueil from "../components/EcranAccueil";
 import APropos from "../components/APropos";
 import Competences from "../components/Competences";
 import petiteStars from "../assets/img/petite-stars.png";
@@ -15,10 +16,8 @@ const Home = () => {
   const handleMouseMove = (event) => {
     setMousePosition({ x: event.clientX, y: event.clientY });
   };
-
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
-
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -39,8 +38,30 @@ const Home = () => {
     };
   }, [mousePosition, followerPosition]);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+    }
+  }, [location]);
+
+  const [hasShownEcranAccueil, setHasShownEcranAccueil] = useState(false);
+  useEffect(() => {
+    const shown = localStorage.getItem("hasShownEcranAccueil");
+    if (!shown) {
+      setHasShownEcranAccueil(true);
+      localStorage.setItem("hasShownEcranAccueil", "true");
+    }
+  }, []);
+
   return (
-    <div className="main">
+    <div>
       <div
         className="mouse"
         style={{
@@ -52,14 +73,16 @@ const Home = () => {
         <img src={stars} alt="Etoiles" className="star" />
       </div>
 
-      {/* <EcranAccueil /> */}
+      {hasShownEcranAccueil && <EcranAccueil />}
 
-      <div className="home">
+      <div id="home-link" className="home">
         <HeroHeader />
         <div className="stars">
           <img src={stars} alt="Etoiles" className="star" />
         </div>
-        <Realisations />
+        <div id="realisations-link">
+          <Realisations />
+        </div>
         <div className="stars">
           <img src={stars} alt="Etoiles" className="star" />
         </div>
@@ -67,7 +90,9 @@ const Home = () => {
         <div className="stars">
           <img src={stars} alt="Etoiles" className="star" />
         </div>
-        <APropos />
+        <div id="a-propos-link">
+          <APropos />
+        </div>
         <div className="stars">
           <img src={stars} alt="Etoiles" className="star" />
         </div>

@@ -18,11 +18,9 @@ const Realisations = () => {
   const handleMouseEnter = (e) => {
     e.target.play();
   };
-
   const handleMouseLeave = (e) => {
     e.target.pause();
   };
-
   const handleLoadedMetadata = (e) => {
     e.target.currentTime = 2;
   };
@@ -69,11 +67,14 @@ const Realisations = () => {
               projet.titreDuProjet.replace(/\s+/g, "-")
             )}`}
             key={index}
-            target="_blank"
           >
             <div className="realisation">
               {projet.image && (
-                <img src={projet.image} alt="Images" className="bloc"></img>
+                <img
+                  src={projet.image}
+                  alt={`Présentation de ${projet.titreDuProjet}`}
+                  className="bloc"
+                ></img>
               )}
               {projet.video && (
                 <video
@@ -83,6 +84,7 @@ const Realisations = () => {
                   onLoadedMetadata={handleLoadedMetadata}
                   muted
                   className="bloc"
+                  alt={`Présentation de ${projet.titreDuProjet}`}
                 />
               )}
               <h3>{projet.titreDuProjet}</h3>

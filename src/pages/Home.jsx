@@ -51,15 +51,6 @@ const Home = () => {
     }
   }, [location]);
 
-  const [hasShownEcranAccueil, setHasShownEcranAccueil] = useState(false);
-  useEffect(() => {
-    const shown = localStorage.getItem("hasShownEcranAccueil");
-    if (!shown) {
-      setHasShownEcranAccueil(true);
-      localStorage.setItem("hasShownEcranAccueil", "true");
-    }
-  }, []);
-
   return (
     <div>
       <div
@@ -73,7 +64,7 @@ const Home = () => {
         <img src={stars} alt="Etoiles" className="star" />
       </div>
 
-      {hasShownEcranAccueil && <EcranAccueil />}
+      <EcranAccueil />
 
       <div id="home-link" className="home">
         <HeroHeader />

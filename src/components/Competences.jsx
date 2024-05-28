@@ -42,7 +42,11 @@ const Competences = () => {
       <h2 className="title">compétences.</h2>
       <div className="competences">
         <div className="design-graphique">
-          <img src={designGraphique} alt="Icone design graphique" />
+          <img
+            className="competences-img"
+            src={designGraphique}
+            alt="Icone design graphique"
+          />
           <h3 id="design-graphique">design de marque</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />
@@ -51,7 +55,11 @@ const Competences = () => {
         </div>
 
         <div className="motion-design">
-          <img src={motionDesign} alt="Icone motion design" />
+          <img
+            className="competences-img"
+            src={motionDesign}
+            alt="Icone motion design"
+          />
           <h3 id="motion-design">motion design.</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />
@@ -60,7 +68,11 @@ const Competences = () => {
         </div>
 
         <div className="web-design">
-          <img src={webDesign} alt="Icone web design et site web" />
+          <img
+            className="competences-img"
+            src={webDesign}
+            alt="Icone web design et site web"
+          />
           <h3 id="web-design">web design et site web.</h3>
           <div className="more">
             <img src={more} alt="Icone plus" />

@@ -1,6 +1,12 @@
 import React from "react";
 import stars from "../assets/img/stars.png";
 import photoProfil from "../assets/img/photo-profil.png";
+import bad from "../assets/img/interets/bad.png";
+import dessin from "../assets/img/interets/dessin.png";
+import rubis from "../assets/img/interets/rubis.png";
+import uk from "../assets/img/interets/uk.png";
+import ecriture from "../assets/img/interets/ecriture.png";
+import livres from "../assets/img/interets/livres.png";
 
 const APropos = () => {
   return (
@@ -173,27 +179,27 @@ const APropos = () => {
       <h2>intérêts.</h2>
       <div className="passions-container">
         <div className="passions">
-          <p className="icones">✏️</p>
+          <img src={dessin} alt="Crayon coloriant un rond" />
           <p>dessin.</p>
         </div>
         <div className="passions">
-          <p className="icones">🧙‍♂️</p>
+          <img src={livres} alt="Pile de livres" />
           <p>fantasy - SF.</p>
         </div>
         <div className="passions">
-          <p className="icones">🧝‍♀️</p>
+          <img src={rubis} alt="Rubis" />
           <p>zelda.</p>
         </div>
         <div className="passions">
-          <p className="icones">🇬🇧</p>
+          <img src={uk} alt="Drapeau du Royaume-Uni" />
           <p>royaume-uni.</p>
         </div>
         <div className="passions">
-          <p className="icones">🖋</p>
+          <img src={ecriture} alt="Plume écrit sur une feuille" />
           <p>écriture.</p>
         </div>
         <div className="passions">
-          <p className="icones">🏸️</p>
+          <img src={bad} alt="Raquette de badminton et son volant" />
           <p>badminton.</p>
         </div>
       </div>

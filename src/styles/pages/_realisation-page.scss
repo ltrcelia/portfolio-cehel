@@ -10,13 +10,18 @@
     display: flex;
     justify-content: center;
     gap: 35px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     p {
       background-color: $powder-pink;
       border-radius: 10px;
       text-align: center;
       padding: 5px 15px;
     }
+  }
+  .liens-container {
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration: underline;
   }
   .premier-bloc {
     max-width: 1160px;
@@ -47,6 +52,15 @@
     }
     p {
       line-height: 22px;
+    }
+    .texte-explication {
+      width: 300px;
+    }
+    .texte-processus {
+      width: 300px;
+    }
+    .texte-enjeux {
+      width: 300px;
     }
   }
   .images-secondaires {

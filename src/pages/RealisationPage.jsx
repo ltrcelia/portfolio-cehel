@@ -109,6 +109,19 @@ const RealisationPage = () => {
           <p>{projet.categorie}</p>
         </div>
 
+        {projet.lien && (
+          <div className="liens-container">
+            <a
+              className="lien-class"
+              href={projet.lien}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lien vers le site
+            </a>
+          </div>
+        )}
+
         {projet.image && (
           <div className="premier-bloc">
             <img
